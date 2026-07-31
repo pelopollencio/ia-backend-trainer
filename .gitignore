@@ -1,0 +1,15 @@
+# Archivos de compilación
+build/
+bin/
+*.o
+*.out
+server_app
+
+# Variables de entorno y secretos (NUNCA SUBIR)
+.env
+*.key
+
+# Archivos de IDE / Editores
+.vscode/
+.idea/
+*.swp

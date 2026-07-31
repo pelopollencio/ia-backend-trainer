@@ -1,0 +1,7 @@
+.git
+.gitignore
+build/
+CMakeFiles/
+CMakeCache.txt
+*.o
+.env
