@@ -14,7 +14,7 @@ include_directories(
 find_package(Boost REQUIRED COMPONENTS system)
 find_package(CURL REQUIRED)
 find_package(Threads REQUIRED)
-
+find_package(SQLite3 REQUIRED)
 # Añadir todos los archivos fuente
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
@@ -26,4 +26,5 @@ target_link_libraries(server_app PRIVATE
     Boost::system 
     CURL::libcurl 
     Threads::Threads
+    SQLite::SQLite3
 )

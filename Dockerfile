@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     libboost-dev \
     libboost-system-dev \
     libcurl4-openssl-dev \
+    libsqlite3-dev \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Crear carpeta de trabajo
@@ -30,6 +32,7 @@ FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y \
     libboost-system1.74.0 \
     libcurl4 \
+    libsqlite3-0 \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
